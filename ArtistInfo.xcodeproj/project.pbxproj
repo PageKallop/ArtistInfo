@@ -13,6 +13,10 @@
 		C08413A6268CFA4B00128EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08413A4268CFA4B00128EAE /* Main.storyboard */; };
 		C08413A8268CFA4D00128EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08413A7268CFA4D00128EAE /* Assets.xcassets */; };
 		C08413AB268CFA4D00128EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08413A9268CFA4D00128EAE /* LaunchScreen.storyboard */; };
+		C08413B4268CFCE600128EAE /* UIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08413B3268CFCE600128EAE /* UIElements.swift */; };
+		C0BC69A0268D4E9100983AAF /* ArtistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC699F268D4E9100983AAF /* ArtistManager.swift */; };
+		C0BC69A3268D51AF00983AAF /* ArtistData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC69A2268D51AF00983AAF /* ArtistData.swift */; };
+		C0BC69A5268D520E00983AAF /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC69A4268D520E00983AAF /* ArtistModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		C08413A7268CFA4D00128EAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C08413AA268CFA4D00128EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C08413AC268CFA4D00128EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C08413B3268CFCE600128EAE /* UIElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElements.swift; sourceTree = "<group>"; };
+		C0BC699F268D4E9100983AAF /* ArtistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistManager.swift; sourceTree = "<group>"; };
+		C0BC69A2268D51AF00983AAF /* ArtistData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistData.swift; sourceTree = "<group>"; };
+		C0BC69A4268D520E00983AAF /* ArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,33 @@
 			children = (
 				C084139E268CFA4B00128EAE /* AppDelegate.swift */,
 				C08413A0268CFA4B00128EAE /* SceneDelegate.swift */,
-				C08413A2268CFA4B00128EAE /* ViewController.swift */,
+				C08413B3268CFCE600128EAE /* UIElements.swift */,
+				C0BC69A1268D4F1000983AAF /* Model */,
+				C08413B2268CFA5700128EAE /* Controller */,
 				C08413A4268CFA4B00128EAE /* Main.storyboard */,
 				C08413A7268CFA4D00128EAE /* Assets.xcassets */,
 				C08413A9268CFA4D00128EAE /* LaunchScreen.storyboard */,
 				C08413AC268CFA4D00128EAE /* Info.plist */,
 			);
 			path = ArtistInfo;
+			sourceTree = "<group>";
+		};
+		C08413B2268CFA5700128EAE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C08413A2268CFA4B00128EAE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C0BC69A1268D4F1000983AAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0BC699F268D4E9100983AAF /* ArtistManager.swift */,
+				C0BC69A2268D51AF00983AAF /* ArtistData.swift */,
+				C0BC69A4268D520E00983AAF /* ArtistModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C08413A3268CFA4B00128EAE /* ViewController.swift in Sources */,
+				C0BC69A3268D51AF00983AAF /* ArtistData.swift in Sources */,
+				C0BC69A5268D520E00983AAF /* ArtistModel.swift in Sources */,
 				C084139F268CFA4B00128EAE /* AppDelegate.swift in Sources */,
+				C0BC69A0268D4E9100983AAF /* ArtistManager.swift in Sources */,
+				C08413B4268CFCE600128EAE /* UIElements.swift in Sources */,
 				C08413A1268CFA4B00128EAE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
