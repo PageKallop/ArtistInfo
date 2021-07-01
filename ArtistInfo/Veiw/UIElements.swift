@@ -28,7 +28,6 @@ struct UIElements {
         button.backgroundColor = UIColor(red: 255/255, green: 130/255, blue: 113/255, alpha: 0.2)
         button.setTitle("Search Artist", for: .normal)
         button.titleLabel?.font = UIFont(name: "PingFang HK", size: 10)
-//        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
         button.setTitleColor(UIColor.black, for: .normal)
         button.layer.cornerRadius = 20
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -40,7 +39,6 @@ struct UIElements {
     let artistNameLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-//        label.sizeToFit()
         label.textColor = UIColor.black
         label.backgroundColor = .clear
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -50,7 +48,7 @@ struct UIElements {
     let trackNameLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-//        label.sizeToFit()
+        label.adjustsFontSizeToFitWidth = true
         label.textColor = UIColor.black
         label.backgroundColor = .clear
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -60,7 +58,6 @@ struct UIElements {
     let releaseDateLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-//        label.sizeToFit()
         label.textColor = UIColor.black
         label.backgroundColor = .clear
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -70,7 +67,6 @@ struct UIElements {
     let genreNameLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-//        label.sizeToFit()
         label.textColor = UIColor.black
         label.backgroundColor = .clear
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -81,7 +77,6 @@ struct UIElements {
     let trackPriceLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-//        label.sizeToFit()
         label.textColor = UIColor.black
         label.backgroundColor = .clear
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -91,7 +86,6 @@ struct UIElements {
     let nameLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-//        label.sizeToFit()
         label.text = "Artist Name"
         label.font = UIFont.boldSystemFont(ofSize: 25)
         label.textColor = UIColor.black
@@ -105,7 +99,6 @@ struct UIElements {
         label.numberOfLines = 0
         label.text = "Track Name"
         label.font = UIFont.boldSystemFont(ofSize: 25)
-//        label.sizeToFit()
         label.textColor = UIColor.black
         label.backgroundColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -117,7 +110,6 @@ struct UIElements {
         label.numberOfLines = 0
         label.text = "Release Date"
         label.font = UIFont.boldSystemFont(ofSize: 25)
-//        label.sizeToFit()
         label.textColor = UIColor.black
         label.backgroundColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -129,7 +121,6 @@ struct UIElements {
         label.numberOfLines = 0
         label.text = "Genre Label"
         label.font = UIFont.boldSystemFont(ofSize: 25)
-//        label.sizeToFit()
         label.textColor = UIColor.black
         label.backgroundColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -140,7 +131,6 @@ struct UIElements {
     let track: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-//        label.sizeToFit()
         label.text = "Track Price"
         label.font = UIFont.boldSystemFont(ofSize: 25)
         label.textColor = UIColor.black
@@ -159,14 +149,14 @@ struct UIElements {
     
     
     var stackView: UIStackView = {
-         let stackView = UIStackView()
-         stackView.translatesAutoresizingMaskIntoConstraints = false
-         stackView.axis = .vertical
-         stackView.spacing = 15
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.spacing = 15
         stackView.alignment = .fill
         stackView.distribution = .fillEqually
         stackView.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.5)
-         return stackView
-     }()
+        return stackView
+    }()
     
 }

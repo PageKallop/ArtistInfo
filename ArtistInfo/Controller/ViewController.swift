@@ -126,8 +126,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegat
         searchField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 60).isActive = true
         searchField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10).isActive = true
         searchField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -100).isActive = true
-        
-        
         searchField.trailingAnchor.constraint(equalTo: buttonSearch.leadingAnchor, constant: -5).isActive = true
         searchField.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -700).isActive = true
     }
@@ -145,7 +143,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegat
         scrollView.topAnchor.constraint(equalTo: searchField.bottomAnchor, constant: 50).isActive = true
         scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor ).isActive = true
         
         
         scrollView.addSubview(stackView)
